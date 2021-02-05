@@ -1,0 +1,204 @@
+.topbar_container{
+    
+    height:20vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+
+   
+}
+.topbar_wrapper{
+    height: 100%;
+    width: 90%;
+    display: flex ;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 65px;
+    width: 150px;
+
+}
+.logo img{
+    height: 100%;
+    object-fit: contain;
+}
+.signIn{
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #191f24;
+}
+.signIn:hover{
+    background-color: #2a3641;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.signIn a {
+    text-decoration: none;
+    color :#5b6772;
+}
+.signIn i{
+    color: #0c85c7;
+}
+a{
+    color: white    ;
+}
+
+.navbar_container{
+    width: 100%;
+    background-color: #181d22;
+    display: flex;
+    justify-content: center ;
+}
+.navbar{
+    height: 8vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    
+    display: flex;
+    
+    list-style: none;
+    flex-direction: row-reverse;
+    
+    flex-basis: 50%;
+    justify-content: space-evenly;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.link{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items : center;
+    padding: 0px 20px;
+}
+.link:hover{
+    cursor: pointer;
+    background-color: #0c85c7;
+    transition: background-color 0.3s ease-in   ;
+}
+
+
+.fa-bars{
+    display: none;
+    color: white;
+    position: absolute;
+    top:10px;
+    right: 25px;
+}
+
+form{
+    background-color:#262f38 ;  
+    height: 100%;
+    flex-basis: 30%;
+    display: flex;
+}
+
+input{
+    background-color: transparent   ;
+    border: 0px;
+    height: 100%;
+    min-width: 0px;
+    flex-basis: 60%;
+    align-self: flex-end    ;
+    color: white;
+    direction: rtl;
+    padding: 0px 20px;
+}
+select{
+    flex-basis: 25%;
+    background-color: #262f38;
+    color: white    ;
+    border: 0px;
+    min-width: 0px;
+    margin: 10px;
+}
+.button{
+    flex-basis: 15%;
+    color: #0c85c7  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent ;
+    border: 0px;
+    min-width: 0px;
+    overflow: hidden;
+}
+.button:hover{
+    cursor: pointer;
+}
+.search{
+    height: 100%;
+    width: 100%;
+}
+.mobile-nav-links{
+    display: none;
+    transition: height 0.2s ease;
+}
+.mobile-nav-links.active{
+    height: 50vh;
+}
+
+@media screen and (max-width:1050px){
+    .nav-links{
+    
+      
+        flex-basis: 70%;
+  
+        height: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:850px){
+    .nav-links{
+        display: none;
+    }
+    form{
+        flex-basis: 100%;
+        min-width: 0px;
+    }
+    .mobile-nav-links{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 0vh;
+        justify-content: space-evenly   ;
+        align-items: center; 
+        overflow: hidden;
+    }    
+
+    .fa-bars{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:450px  ){
+    
+    .topbar_wrapper{
+        width: 100vw;
+       
+        padding: 0px 10px ;    
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+    }
+    .signIn{
+        font-size: 14px;
+        padding: 10px;
+    }
+}

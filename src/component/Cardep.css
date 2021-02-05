@@ -1,0 +1,133 @@
+.card-ep-container{
+    height: 25vh;
+    width: 15vw;
+    overflow: hidden;
+    border-radius: 10px ;
+}
+.card-ep-wrapper{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-content: center;
+}
+.ep-image{
+    
+    width: 100%;
+    grid-row: 1/end ;
+    grid-column: 1/end;
+    z-index: -1;
+}
+img{
+    height: 100%;
+    width: 100%;
+    
+    object-fit: cover;
+
+}
+.ep-details{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    grid-row: 3/4;
+    grid-column: 1/end;
+}
+.ep-num-qua{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    align-content: center   ;
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.ep-num{
+    padding:8px 15px;
+    background-color:#269edf;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.ep-qua{
+    padding:8px 15px;
+    background-color:#f16464;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.ep-info{
+    color: white;
+    text-align: right;
+    padding: 0px 10px;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/end;
+    grid-row: 1/end;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.ep-info-year-qua{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.card-ep-container:hover{
+    cursor: pointer;
+}
+.card-ep-container:hover .ep-num-qua{
+    opacity: 0%;
+    transition: all 0.4s ease;
+}
+.card-ep-container:hover .ep-details{
+    opacity: 0%;
+    transition: all 0.4s ease;
+}
+
+
+.card-ep-container:hover .ep-info{
+    opacity: 100%;
+    transition: opacity 0.3s ease-in;
+}
+.ep-info-cat-story{
+    direction: rtl;
+}
+
+@media screen and (max-width:1000px){
+
+    .card-ep-container{
+        height: 25vh;
+        width: 20vw;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width:700px){
+
+    .card-ep-container{
+        height: 25vh;
+        width: 30vw;
+        overflow: hidden;
+    }
+
+}
+@media screen and (max-width:520px){
+
+    .card-ep-container{
+        height: 25vh;
+        width: 40vw;
+        overflow: hidden;
+    }
+
+}

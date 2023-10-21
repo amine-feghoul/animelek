@@ -1,5 +1,5 @@
 import React from 'react'
-import Episodes from '../Episodes'
+import Episodes from '../component/Episodes'
 import './NewEps.css'
 function NewEps(props) {
     const episodes = [

@@ -149,6 +149,22 @@ select{
     height: 50vh;
 }
 
+.user-info{
+    width:300px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #2a3641;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.fa-right-from-bracket:hover
+{
+    cursor: pointer;
+    color: #999;
+}
+
 @media screen and (max-width:1050px){
     .nav-links{
     
